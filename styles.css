@@ -1,0 +1,537 @@
+/* Font imports */
+@font-face {
+  font-family: "Ndot";
+  src: url("Ndot-55-DoenNkNm.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sansation";
+  src: url("Sansation_Regular-COtNG1MQ.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Korataki";
+  src: url("korataki-rg-3cf0d889-B6eTgmP5.ttf") format("truetype"),
+    url("korataki-rg-3cf0d889.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Icon font */
+@font-face {
+  font-family: "Remixicon";
+  src: url("remixicon.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General Styles */
+:root {
+  --tw-text-opacity: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+  background-color: #000;
+  color: white;
+  overflow-x: hidden;
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Navigation Styles */
+.nav-container {
+  width: 100%;
+  min-height: 15.3vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.nav-l {
+  display: flex;
+  align-items: center;
+}
+
+.logo-nav {
+  position: absolute;
+  top: 2vh;
+  left: 1.75rem;
+}
+
+.logo {
+  position: absolute;
+  font-weight: 400;
+  top: -7vh;
+  left: 0vw;
+  font-family: "Ndot";
+  width: 25vw;
+}
+
+.nav-center {
+  display: flex;
+  gap: 1.25rem;
+  margin-left: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-c {
+  position: relative;
+  overflow: hidden;
+  margin-top: 0.9vw;
+  margin-left: 15vw;
+  display: flex;
+  align-items: center;
+}
+
+.nav-c img {
+  width: 20rem;
+}
+
+.nav-c input {
+  position: absolute;
+  top: 0.4vw;
+  left: 1vw;
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  border-radius: 9999px;
+  padding: 0.5rem 2.5rem;
+  width: 18rem;
+  font-size: 1.25rem;
+}
+
+.nav-c input::placeholder {
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.nav-c input:hover {
+  animation: pulse 2s infinite;
+}
+
+.nav-r {
+  position: relative;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-r img {
+  width: 9.375rem;
+}
+
+.nav-r .heading {
+  position: absolute;
+  font-size: 1rem;
+  top: 0.7vw;
+}
+
+.nav-r .heading a {
+  color: white;
+  text-decoration: none;
+  font-family: "Korataki";
+}
+
+.nav-r .heading:nth-child(2) {
+  left: 2.7em;
+}
+
+.nav-r .heading:nth-child(4) {
+  left: 13.6em;
+}
+
+.nav-r .heading:nth-child(6) {
+  left: 28.5em;
+  font-size: 0.875rem;
+  top: 0.9em;
+}
+
+.nav-r:hover {
+  animation: pulse 2s infinite;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+/* Main Content Styles */
+.main-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  position: relative;
+}
+
+.content-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Line Styles */
+.line {
+  height: 2px;
+  background-color: white;
+  box-shadow: 0 0 20px white;
+  position: absolute;
+}
+
+.line1 {
+  width: 11vw;
+  transform: rotate(-144.95deg);
+  top: 2.9vw;
+  left: 17.99vw;
+}
+
+.line2 {
+  width: 14.9vw;
+  top: 5.98vw;
+  left: 27.89vw;
+}
+
+.line3 {
+  width: 8vw;
+  top: 7.99vw;
+  left: 42.3vw;
+  transform: rotate(-150.01deg);
+}
+
+.line4 {
+  width: 50vw;
+  top: 10.01vw;
+  left: 49.7vw;
+}
+
+.line5 {
+  width: 15vw;
+  top: 9.7vw;
+  left: 37.7vw;
+  transform: rotate(-149.59deg);
+}
+
+.line6 {
+  width: 5vw;
+  top: 13.5vw;
+  left: 51.6vw;
+}
+
+.line7 {
+  width: 3.9vw;
+  top: 14.99vw;
+  left: 55.89vw;
+  transform: rotate(49.18deg);
+}
+
+.line8 {
+  width: 15.89vw;
+  top: 16.39vw;
+  left: 58.9vw;
+}
+
+.line9 {
+  width: 5vw;
+  top: 14.2vw;
+  left: 73.4vw;
+  transform: rotate(117.7deg);
+}
+
+.line10 {
+  width: 25vw;
+  top: 12vw;
+  left: 77vw;
+}
+
+.line11 {
+  width: 44vw;
+  top: 35vw;
+  left: 0vw;
+}
+
+.line12 {
+  width: 5vw;
+  top: 33.59vw;
+  left: 43.48vw;
+  transform: rotate(144.8deg);
+}
+
+.line13 {
+  width: 70vw;
+  top: 32.2vw;
+  left: 47.9vw;
+}
+
+/* Phone Images */
+.mobile1 {
+  transform: rotate(-32deg);
+  z-index: 20;
+  position: absolute;
+  top: 8vw;
+  left: 65vw;
+  width: 32vh;
+}
+
+.mobile2 {
+  transform: rotate(-32deg);
+  position: absolute;
+  top: 5vw;
+  left: 60vw;
+  z-index: 10;
+  width: 32vh;
+}
+
+/* Text Content */
+.text-content {
+  width: 100%;
+  height: 100%;
+}
+
+.heading-section {
+  position: absolute;
+  top: 18vw;
+  left: 3vw;
+  text-align: center;
+  width: 50vw;
+}
+
+.heading1,
+.heading2 {
+  font-size: 3vw;
+  color: #999d9c;
+  font-family: "Korataki";
+}
+
+.specs {
+  position: absolute;
+  top: 32vw;
+  left: 6vw;
+  overflow: hidden;
+}
+
+.specs h5 {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+  font-family: "Ndot";
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .nav-c input {
+    width: 15rem;
+    font-size: 1rem;
+  }
+
+  .nav-r img {
+    width: 7rem;
+  }
+
+  .nav-r .heading:nth-child(2) {
+    left: 2em;
+  }
+
+  .nav-r .heading:nth-child(4) {
+    left: 10em;
+  }
+
+  .nav-r .heading:nth-child(6) {
+    left: 20em;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Hide desktop navigation elements */
+  .nav-center {
+    display: none;
+  }
+
+  /* Mobile Navigation */
+  .nav-container {
+    min-height: 15vw;
+    height: 15vw;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-l {
+    position: relative;
+    height: 100%;
+    width: 30vw;
+  }
+
+  .logo-nav {
+    position: static;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  .logo {
+    position: absolute;
+    top: -6vw;
+    left: -5vw;
+    width: 130%;
+    object-fit: fill;
+    display: block;
+    font-size: 0;
+  }
+
+  /* Hamburger Menu Button */
+  .nav-r {
+    display: flex;
+    height: 100%;
+    gap: 1rem;
+  }
+
+  .nav-r > img,
+  .nav-r > .heading {
+    display: none;
+  }
+
+  .hamburger-menu {
+    position: relative;
+    height: 100%;
+    width: 10vw;
+    display: block;
+  }
+
+  .hamburger-menu img:first-child {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  .hamburger-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  /* Mobile phone positioning */
+  .mobile1 {
+    width: 32vw;
+    top: 55vw;
+    left: 40vw;
+    transform: rotate(-32deg);
+    z-index: 20;
+  }
+
+  .mobile2 {
+    width: 32vw;
+    top: 45vw;
+    left: 28vw;
+    transform: rotate(-32deg);
+    z-index: 10;
+  }
+
+  /* Hide desktop lines */
+  .line1,
+  .line2,
+  .line3,
+  .line4,
+  .line5,
+  .line6,
+  .line7,
+  .line8,
+  .line9,
+  .line10 {
+    display: none;
+  }
+
+  /* Mobile lines */
+  .line11 {
+    width: 44vw;
+    top: 35vw;
+    left: 0vw;
+  }
+
+  .line12 {
+    width: 5vw;
+    top: 33.59vw;
+    left: 43.48vw;
+    transform: rotate(144.8deg);
+  }
+
+  .line13 {
+    width: 70vw;
+    top: 32.2vw;
+    left: 47.9vw;
+  }
+
+  /* Text positioning */
+  .heading-section {
+    top: 15vw;
+    left: 3vw;
+    width: 100vw;
+    text-align: center;
+  }
+
+  .heading1,
+  .heading2 {
+    font-size: 5vw;
+  }
+
+  .specs {
+    position: absolute;
+    top: 60vh;
+    left: 17vw;
+    width: 66vw;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .specs h5 {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 200;
+  }
+  .mobile-break {
+    display: block;
+    font-family: "Ndot";
+  }
+}
+/* Default: inline for desktop */
+.mobile-break {
+  display: inline;
+}
+
+/* Mobile screen: second part goes to new line */
