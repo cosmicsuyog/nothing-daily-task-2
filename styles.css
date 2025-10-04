@@ -515,7 +515,7 @@ body {
     left: 17vw;
     width: 66vw;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
   }
 
