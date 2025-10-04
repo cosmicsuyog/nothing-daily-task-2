@@ -510,12 +510,12 @@ body {
   }
 
   .specs {
-    position: absolute;
+    /* position: absolute; */
     top: 66vh;
     left: 17vw;
     width: 66vw;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
   }
 
